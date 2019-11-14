@@ -1,0 +1,213 @@
+@media (max-width: 519px){
+    main{
+        grid-template-columns: 1fr;
+    }
+    header{
+        padding: 0 20px 100px 20px;
+    }
+    table{
+        margin: 50px auto;
+    }
+    #mySkills{
+        grid-template: repeat(5, 1fr) / 1fr;
+    }
+}
+@media (max-width: 780px) and (min-width: 520px){
+    main{
+        grid-template-columns: 1fr;
+    }
+    header{
+        padding: 0 20px 100px 20px;
+    }
+    header p{
+        margin-bottom: 10px;
+    }
+    table{
+        margin: 50px auto;
+    }
+    #mySkills{
+        grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 781px){
+    main{
+        grid-template-columns: 1fr 2fr;
+        margin:0 7%;
+    }
+    header p{
+        margin-bottom: 40px;
+    }
+    table {
+        margin: 50px 30px;
+      }
+    #mySkills{
+        grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    display: grid;
+}
+a{
+    color: #0b5555;
+}
+header{
+    background: #2d3939;
+    text-align: center;
+}
+header h1,
+header p{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+header h1{
+    padding: 40px 0 20px;
+    font-size: 1.5em;
+}
+header p{
+    display: inline-block;
+    font-size: 0.9em;
+    border: 1px solid white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#generalInfo{
+    background: #ececec;
+}
+#myPhoto{
+    display: block;
+    margin: 50px auto;
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url("myPhoto.jpg");
+    background-size: cover;
+}
+table {
+    border-collapse: collapse;
+    width: 85%;
+    margin: 50px auto;
+  }
+td, th{
+    border-bottom: 1px solid #c1c1c1;
+    text-align: left;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+th{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+td:first-child{
+    font-weight: bold;
+}
+#aboutMe{
+    padding: 20px 30px;
+}
+#aboutMe h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+}
+#aboutMe h2:after{
+    content:' ';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #c1c1c1;
+    margin: 15px 0;
+}
+#aboutWork{
+    display: grid;
+    grid-template: 1fr 0.7fr 0.4fr/2fr 6fr;
+    grid-row-gap: 10px;
+}
+#aboutEducation{
+    display: grid;
+    grid-template: 1fr 1fr 1fr/2fr 6fr;
+    grid-row-gap: 10px;
+}
+.label {
+    width: 60px; 
+    height: 36px;
+    padding-top: 10px; 
+    background: #2d3939;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+.label:after {
+    content: " ";
+    display: block;
+    width: 0; 
+    height: 0;
+    position: relative;
+    bottom: 28px;
+    left: 60px;
+	border: 18px solid transparent;
+	border-left: 22px solid #2d3939;
+    }
+.positionDescription {
+    margin-bottom: 20px;
+    border-left: 1px solid #c1c1c1;
+    padding-left: 20px;
+}
+.positionDescription p{
+    padding-top: 10px;
+}
+#mySkills{
+    display: grid;
+    grid-row-gap: 30px;
+    font-size: 1.1em;
+}
+/*#mySkills p:after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 8px;
+    background: #2d3939;
+    box-sizing: border-box;
+
+}
+.htmlSkill:after{
+    border-right:solid 20px #c1c1c1;
+}
+.cssSkill:after{
+    border-right:solid 30px #c1c1c1;
+}
+.jsSkill:after{
+    border-right:solid 60px #c1c1c1;
+}
+.reactSkill:after{
+    border-right:solid 90px #c1c1c1;
+}
+.bootstrapSkill:after{
+    border-right:solid 70px #c1c1c1;
+}
+.jquerySkill:after{
+    border-right:solid 50px #c1c1c1;
+}
+.jqTemplatesSkill:after{
+    border-right:solid 60px #c1c1c1;
+}
+.gitSkill:after{
+    border-right:solid 40px #c1c1c1;
+}
+.npmSkill:after{
+    border-right:solid 110px #c1c1c1;
+}
+.apiSkill:after{
+    border-right:solid 70px #c1c1c1;
+}
+*/
